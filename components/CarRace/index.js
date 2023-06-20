@@ -35,7 +35,7 @@ export default function CarRace() {
     setCars((draft) => {
       const selectedCar = draft.find(({ emoji }) => emoji === clickedCar.emoji);
       selectedCar.position.lastDistance = coveredDistance;
-      selectedCar.position.x += selectedCar.position.lastDistance;
+      selectedCar.position.x += coveredDistance;
     });
   }
 
